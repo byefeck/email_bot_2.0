@@ -12,8 +12,7 @@ def format_msg(msg_dict):
         f'👻 Имя отправителя: {sender_name}\n'
         f'📧 Почта отправителя: {sender_email}\n'
         f'📎 Прикрепленные файлы: {"есть" if has_att else "нет"}\n\n'
-        f'🙉 Тема: {subject}\n'
-        f'💬 Текст:\n'
+        f'🙉 Тема: {subject}\n\n'
         f'{safe_cut(text)}\n\n'
     )
     return safe_cut(message, 4000)
