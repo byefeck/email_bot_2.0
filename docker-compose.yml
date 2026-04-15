@@ -1,0 +1,10 @@
+services:
+  email-bot-cursor:
+    build: .
+    container_name: email_bot_cursor
+    env_file:
+      - .env
+    volumes:
+      - ./json:/app/json
+      - ./errors.log:/app/errors.log
+    restart: unless-stopped

@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+.DS_Store
+errors.log
+json/token.json
+json/credentials.json
+json/state.json
